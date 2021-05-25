@@ -43,7 +43,7 @@ const LinksForm = (props) => {
   };
 
   const getLinkById = async (id) => {
-    const doc = await db.collection("links").doc(id).get();
+    const doc = await db.collection("Blogs").doc(id).get();
     setValues({ ...doc.data() });
   };
 
